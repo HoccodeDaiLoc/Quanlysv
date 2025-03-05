@@ -1,0 +1,41 @@
+@use "Global.modules.scss";
+.paginate_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .page-item {
+      background-color: #fff;
+
+      border-radius: 20px;
+      border: none;
+      .active {
+        background-color: #097059;
+        color: #fff;
+      }
+      .page-link {
+        border-radius: 20px;
+        border: none;
+        background-color: #fff;
+        color: #36a189;
+        display: inline-block;
+        margin-right: 2px;
+        min-width: 30px;
+        padding: 4px 10px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 22px;
+        line-height: 1.375rem;
+      }
+    }
+  }
+  li {
+    padding: 5px;
+  }
+}

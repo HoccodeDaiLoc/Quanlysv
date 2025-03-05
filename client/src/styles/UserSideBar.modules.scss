@@ -1,0 +1,43 @@
+@use "./Global.modules.scss";
+@use "./UserHomePage.modules.scss";
+
+.UserSideBar_wrapper{
+    @extend %Sidebar;
+    .UserSideBar_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0px;
+        .UserSideBar_Item{
+            padding: 0px 10px;
+
+            .UserSideBar_Detail{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 0;
+                padding: 10px;
+                align-items: center;
+                border-radius: 20px;
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    color: blue;
+                }
+                .UserSideBar_text{
+                    white-space: nowrap;//trên cùng 1 hàng
+                    margin-left: 5px;
+                    color: #333;
+                }
+                .UserSideBar_text:hover{
+                    color: #DC3D35;
+                }
+            }
+        }
+    }
+}
+.active{
+    background-color: #eeeeee;
+    color:#DC3D35  ;  
+}

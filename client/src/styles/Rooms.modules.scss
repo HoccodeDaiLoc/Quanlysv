@@ -1,0 +1,110 @@
+@use "./Global.modules.scss";
+
+$imgwidth: 270px;
+$imgheight: $imgwidth+20px;
+
+#Content_wrapper {
+    @extend %base;
+    margin-top: 30px;
+    .DropDownBar{
+        padding-bottom: 40px;
+    }
+    .Content {
+        @extend %fixat1360;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        height: 200%;
+        grid-column-gap: 92px;
+    }
+    
+}
+
+.bold {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.Room_container {
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+   margin: 20px 0px;
+
+    .Room_details_container{
+            cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        .img_container{
+            border-radius: 15px;
+            width: $imgwidth ;
+            min-width: 200px;
+            max-width: 400px;
+            height: $imgheight;
+            .room_img {
+                border-radius: 15px;
+                width: $imgwidth ;
+                min-width: 200px;
+                max-width: 400px;
+                height: $imgheight;
+            }
+        }
+        .info {
+            width: $imgwidth ;
+    
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}   
+.number {
+    margin: auto 0px;
+}
+.repo-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .listing {
+    margin-bottom: 1rem;
+  }
+
+.Dropdown_container{
+    @extend %fixat1360;
+    .Dropdown{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        
+        .DropdownButton{
+            margin-right:20px ;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .active{
+            background-color: Global.$secondaryRed;
+
+        }
+        .DropdownListGroup{
+            .DropdownItem{
+                border: 1px #ffffff solid;
+                border-radius: 10px;
+                margin-right: 20px;
+                height: 100%;
+            }
+            .DropdownItem:hover{
+                cursor: pointer;
+                border: Global.$primaryRed solid 1px;
+            }
+            .active{
+                background-color: Global.$secondaryRed;
+            }
+        }
+    }
+}

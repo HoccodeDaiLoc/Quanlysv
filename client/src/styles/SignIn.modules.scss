@@ -1,0 +1,200 @@
+@use "./Global.modules.scss";
+
+.SignWrapper {
+    background-image:url('../asset/image/backgroundFinal.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin:  auto;
+    height: 100vh;
+    background-color: #f7f7f7;
+    .logo_container{
+        padding: 20px;
+        margin:50px auto;
+        width: 144px;
+        height: 43.776px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: 144px;
+            height: 43.776px;
+        }
+    }
+
+    .SignContainer {
+        background-color: #313338;
+        margin:  auto;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+
+        .SubSignContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .text_container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                border-bottom: Global.$background 1px solid;
+
+                h6{
+                    color: Global.$secondaryText;
+                }
+                .title {     
+                               color: hsl(215 calc(1 * 8.8%) 73.3% / 1);
+                    font-size: x-large;
+                    margin-bottom: 20px;
+                }
+            }
+
+
+            .SignForm {
+                color: hsl(215 calc(1 * 8.8%) 73.3% / 1);
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                width: 100%;
+
+                .name_container{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: flex-start;
+                    .firstname_container{
+                        width: 48%;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .lastname_container{
+                        width: 48%;
+                        input{
+                            width: 100%;
+                        }
+                        margin-left: auto;
+                    }
+                }
+                .pass_container {
+                    position: relative;
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    .icon1 {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                    }
+                }
+
+                .username_container {
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                }
+                .dob_container{
+                    .sub_dob_container{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:flex-start;
+                        align-items: baseline;
+    
+                        .dob{
+                            margin-left: 30px;
+                        }
+                    }
+
+                }
+                &.user_username,
+                &.pass {
+                    border: none;
+                    padding: 20px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    padding: 5px 0px;
+                    margin-top: 10px;
+
+                }
+
+                .inputbox {
+                    background-color: #1e1f22;
+                    color: #fff7f7;
+                    margin-top: 10px;
+                    border: none;
+                    padding: 5px 10px;
+
+                    border-radius: 5px;
+                    height: 40px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                }
+
+                .submit_Sign {
+                    border: none;
+                    padding: 5px 0px;
+                    border-radius: 20px;
+                    margin-top: 30px;
+                    background-color: #fff7f7;
+                }
+
+                .active {
+                    background-color: #ff385c;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+                .sign_text{
+                    cursor: pointer;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .qr_container {
+            min-width: 40%;
+            width: 40%;
+            height: 176px;
+            width: 176px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin:0  auto;
+            
+            .title {
+                font-size: x-large;
+                color: #fff7f7;
+                margin-bottom: 10px;
+            }
+
+            .loginbyqr {
+                height: 160px;
+                width: 160px;
+                object-fit: cover;
+            }
+
+        }
+
+
+    }
+
+
+}
+

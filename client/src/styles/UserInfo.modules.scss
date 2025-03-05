@@ -1,0 +1,242 @@
+@use "./Global.modules.scss";
+@use "./UserHomePage.modules.scss";
+
+.UserInfo_Wrapper{
+    @extend %UserInfo;
+    // background-color:#ffffff ;  
+    .UserInfo_Container{
+        .User_Header_container{
+            position: relative;
+            .bill_arrow{
+                position: absolute;
+                bottom: 14px;
+                right: 590px;
+            }
+        }
+        .billSelect {
+            appearance: none;
+            background-color: #fff; 
+            border: 1px solid #ddd; 
+            padding: 0.8em 1.2em;
+            font-size: 16px;
+            line-height: 1.2;
+            border-radius: 0.4em; 
+            -webkit-appearance: none; 
+            -moz-appearance: none;
+          }
+          
+          .billSelect:focus {
+            outline: none; 
+            border-color: #009879;
+          }
+          
+          .billSelect option {
+            background-color: #fff;
+            color: #333; 
+            padding: 0.5em 1em; 
+            cursor: pointer;
+          }
+          
+          .billSelect option:selected {
+            background-color: #009879; 
+            color: #fff; 
+          }
+          
+          .billSelect::-ms-expand {
+            appearance: none;
+            margin: 0; 
+            padding: 0; 
+            background-color: #009879; 
+            color: #fff;
+            pointer-events: none; 
+          }
+          
+          .billSelect[dir="rtl"]::-ms-expand {
+            transform: rotate(180deg); 
+          }
+        .UserInfo_Table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            .UserInfo_Table_Row{
+                position: relative;
+                .table_icon{
+                    position: absolute;
+                }
+            }
+
+        }
+        
+        .UserInfo_Table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .UserInfo_Table th,
+        .UserInfo_Table td {
+            white-space: nowrap;
+            padding: 12px 15px;
+        }
+        .UserInfo_Table tbody tr td:nth-child(5){
+            display: flex;
+            flex-direction: row;
+
+         }
+        .UserInfo_Table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+        .UserInfo_Table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        
+        .UserInfo_Table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+        
+        .UserInfo_Table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+        .UserInfo_Table tbody tr td{
+            .icon_payment_container{
+                width: 100%;
+                height: 100%;
+                padding-left: 12px;
+                .icon_payment_sub{
+                    width: fit-content;
+                    height: fit-content;
+                    display: flex;
+                   .icon_payment{
+                    width: 21.6px;
+                    height: 21.6px;
+                    cursor: pointer;
+                   } 
+                }
+            }
+        }
+         .UserInfo_Item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 20px;
+.SubItem{
+    display: flex;
+    flex-direction: column;
+}
+            .UserInfo_Item_Text{
+                width: 150px;
+            }
+            .SecondaryText{
+                @extend %SecondaryText;
+                padding: 5px 0px;
+            }
+            .UserInfo_Item_Input{
+                width: 500px;
+                border-radius: 10px;
+                border: 0.2px solid rgba(0, 0, 0, .05);
+                padding:8px 10px;
+                outline: none;
+                // ko có viền khi click vào
+            }
+        }
+        .UserInfo_Item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 20px;
+
+            .UserInfo_Item_Text{
+                width: 150px;
+            }
+            .SecondaryText{
+                @extend %SecondaryText;
+                padding: 5px 0px;
+            }
+            .UserInfo_Item_Input{
+                width: 500px;
+                border-radius: 10px;
+                padding:8px 10px;
+                outline: none;
+                border:#009879 0.2px solid;
+                // ko có viền khi click vào
+            }
+
+        }
+        .UserInfo_Item_Complain{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            .UserInfo_Item_Input_Complain{
+                width: 500px;
+                border-radius: 10px;
+                border: 0.2px solid rgba(0, 0, 0, .05);
+                padding:16px 10px;
+                outline: none;
+                // ko có viền khi click vào
+            }
+        }
+    }
+}
+.sub_dob_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: baseline;
+
+    .dob{
+        margin-left: 30px;
+    }
+}
+.payment_window{
+   width:100%;
+   height:100%;
+}
+.payment_window:hover{
+    cursor: pointer;
+}
+.hover-text {
+    position: relative; /* Enable positioning for child elements */
+  }
+  
+  .hover-text:hover .hover-text-content {
+    z-index: 1000;
+    display: block; /* Show content on hover */
+    position: absolute; /* Position content relative to the parent */
+    transform: translateX(-50%); /* Fine-tune centering */
+    background-color: #fff; /* Set background color */
+    padding: 10px; /* Add padding */
+    left:70px;
+    bottom: 20px;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  }
+  
+  .hover-text-content {
+    display: none; /* Hide content initially */
+    /* Add additional styles for the tooltip content here */
+  }
+  .UserInfo_Edit_Button_Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .UserInfo_Edit_Button{
+        border: none;
+        padding: 5px 0px;
+        border-radius: 20px;
+        margin-top: 30px;
+        background-color: #ff385c;
+        color: #ffffff;
+        cursor: pointer;
+        width: 30%;
+    }
+}

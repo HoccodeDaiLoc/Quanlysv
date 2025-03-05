@@ -1,0 +1,34 @@
+@use "./Global.modules.scss";
+.Dropdown_container{
+    @extend %fixat1360;
+    .Dropdown{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        
+        .DropdownButton{
+            margin-right:20px ;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .active{
+            background-color: Global.$secondaryRed;
+
+        }
+        .DropdownListGroup{
+            .DropdownItem{
+                border: 1px #ffffff solid;
+                border-radius: 10px;
+                margin-right: 20px;
+                height: 100%;
+            }
+            .DropdownItem:hover{
+                cursor: pointer;
+                border: Global.$primaryRed solid 1px;
+            }
+            .active{
+                background-color: Global.$secondaryRed;
+            }
+        }
+    }
+}

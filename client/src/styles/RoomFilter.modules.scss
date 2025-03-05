@@ -1,0 +1,14 @@
+@use "./Global.modules.scss";
+.RoomFilterWrapper{
+    padding-bottom: 20px;
+    .RoomFilterContainer{
+            #RoomFilter{
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 10px;
+                .FilterItem{
+                }
+            }
+
+    }
+}

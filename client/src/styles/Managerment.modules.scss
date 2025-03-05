@@ -1,0 +1,47 @@
+@use "Global.modules.scss";
+/* Basic button styles */
+.UserInfo_Table button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  /* Hover effect */
+  .UserInfo_Table button:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  
+  /* View Details button */
+  .UserInfo_Table .view-details-btn {
+    background-color: #2196F3; /* Blue */
+  }
+  
+  .UserInfo_Table .view-details-btn:hover {
+    background-color: #1976D2; /* Darker blue */
+  }
+  
+  /* Edit button */
+  .UserInfo_Table .edit-btn {
+    background-color: #FFC107; /* Yellow */
+  }
+  
+  .UserInfo_Table .edit-btn:hover {
+    background-color: #F4B400; /* Darker yellow */
+  }
+  
+  /* Delete button */
+  .UserInfo_Table .delete-btn {
+    background-color: #F44336; /* Red */
+  }
+  
+  .UserInfo_Table .delete-btn:hover {
+    background-color: #DA2919; /* Darker red */
+  }

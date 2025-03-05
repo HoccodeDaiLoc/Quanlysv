@@ -1,0 +1,38 @@
+.nav-link {
+    color: #000; // default text color
+    background-color: transparent; // default background color
+    border-radius: 0; // default border-radius
+    transition: background-color 0.3s, color 0.3s; // smooth transition
+  }
+  
+  .nav-link.active-link {
+    color: #ffffff; // active text color
+    font-size: 18px;
+    font-weight: bold; 
+    background-color: #dc3545; // active background color (danger/red)
+    border-radius: 10px; 
+    // rounded corners
+    
+  }
+  
+// Header.scss
+
+.bell-icon {
+  font-size: 25px; // Kích thước biểu tượng chuông
+  color: #dc3545; // Màu sắc của biểu tượng chuông
+  background: none; // Background không có màu
+  border: none; // Không có viền
+  cursor: pointer; // Biểu tượng chuông khi rê chuột qua sẽ hiển thị dấu nháy
+  margin-left: 150px; // Dịch biểu tượng sang phải 10px
+}
+.tk {
+  // Kích thước biểu tượng chuông
+  color: #dc3545; // Màu sắc của biểu tượng chuông
+  font-size: 25px;
+  background: none; // Background không có màu
+  border: none; // Không có viền
+  cursor: pointer; // Biểu tượng chuông khi rê chuột qua sẽ hiển thị dấu nháy
+  margin-left: 100px; // Dịch biểu tượng sang phải 10px
+  margin-top: 10px;
+}
+

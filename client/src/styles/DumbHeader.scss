@@ -1,0 +1,33 @@
+@use "./Global.modules.scss";
+@use "./Header.modules.scss";
+
+$iconwidth: 80px;
+$iconpadding: 20px;
+.Dumbwrapper {
+  width: 100vw;
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 32px;
+    margin: 0px auto;
+    .logo {
+      padding-right: $iconpadding;
+      width: $iconwidth + $iconpadding;
+      height: 80px;
+    }
+    .text {
+      font-size: 1.5rem;
+    }
+    .support {
+      font-size: 1rem;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}

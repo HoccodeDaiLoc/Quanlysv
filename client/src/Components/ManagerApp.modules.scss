@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .app-container {
+    .add-new {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+    }
+    .group-btns{
+      display: flex;
+      gap: 10px;
+  
+      i {
+        padding: 0 2px;
+      }
+    }
+    
+  
+  }
+  // App.scss
+  
+  // App.scss
+  
+  //modad_tro
+  .modal-add-tro{
+    
+    .img_tro{
+      border: 1px dashed #ccc;
+      height: 150 px;
+      border-radius:  5px;
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+      color: #ccc;
+    }
+    
+  }
+  
+  .large-modal {
+    width: 90vw; /* Đặt chiều rộng của modal là 90% của chiều rộng của viewport */
+    margin: 0 auto; /* Canh giữa modal */
+  }
+  
+  .modal-dialog {
+    max-width: unset; /* Xóa giới hạn chiều rộng tối đa */
+    width: 100%; /* Đặt chiều rộng modal là 100% để mở rộng ra hai bên */
+  }
+  
+  .body_add_new {
+    padding: 20px; /* Thêm padding để tạo khoảng cách xung quanh nội dung */
+    background-color: #f9f9f9; /* Đặt màu nền cho phần nội dung */
+    border-radius: 10px; /* Bo tròn các góc của phần nội dung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ cho phần nội dung */
+    width: 100%; /* Đảm bảo phần nội dung mở rộng ra toàn bộ chiều rộng của modal */
+  }
+  
+  .body_add_new img {
+    width: 100px; /* Đặt chiều rộng cố định cho ảnh */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ khung hình */
+    display: block; /* Đảm bảo ảnh không bị đè lên các phần tử khác */
+    margin: 0 auto 10px; /* Canh giữa ảnh và thêm khoảng cách dưới */
+  }
+  
+  .body_add_new {
+    margin-bottom: 10px; /* Khoảng cách giữa các dòng trong phần thông tin người dùng */
+  }
+  
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .modal-add-tro .img_tro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  
+  
+  .modal-add-tro .img_tro img {
+    max-width: 350px; /* Increase the maximum width for the image */
+    max-height: 350px; /* Increase the maximum height for the image */
+    border-radius: 20px; /* Optional: Add some rounding to the image corners */
+  }
+  
+  
+  
+  
+  .them{
+    margin-left: 60%;
+    width: 180px; /* Đặt kích thước chiều rộng của nút */
+  height: 40px;
+  }
+  

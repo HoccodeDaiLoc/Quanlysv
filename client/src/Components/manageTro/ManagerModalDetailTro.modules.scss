@@ -1,0 +1,54 @@
+.large-modal .modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .large-modal .modal-header {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .large-modal .modal-title {
+    font-weight: bold;
+  }
+  
+  .large-modal .modal-footer {
+    border-top: 0;
+  }
+  
+  .body_add_new {
+    padding: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+  
+  textarea.form-control {
+    resize: none;
+  }
+  
+  button {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  // ModalDetailTro.scss
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-title {
+    margin: 0;
+    margin-left: auto;
+  }
+  
